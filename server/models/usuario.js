@@ -44,7 +44,7 @@ let usuarioSchema = new Schema({
     }
 });
 
-// no se usa función de flacha porque se necesita el this
+// no se usa función de flecha porque se necesita el this
 usuarioSchema.methods.toJSON = function() {
 
     let user = this;
