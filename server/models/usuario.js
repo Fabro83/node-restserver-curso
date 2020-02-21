@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
+const Schema = mongoose.Schema;
 
 
 let rolesValidos = {
@@ -7,7 +8,7 @@ let rolesValidos = {
     message: '{VALUE} no es un rol válido'
 };
 
-let Schema = mongoose.Schema;
+
 
 let usuarioSchema = new Schema({
     nombre: {
